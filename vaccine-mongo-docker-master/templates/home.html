@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Vaccination Status App</title>
+</head>
+<body>
+    <form action="/vaccination_status" method="POST">
+        <label for="reg_no">Enter Registration Number:</label>
+        <input type="number" id="reg_no" name="reg_no"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if status %}
+        <p>{{ status }}</p>
+    {% endif %}
+</body>
+</html>
